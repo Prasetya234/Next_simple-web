@@ -1,0 +1,70 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  max-width: 1400px;
+  margin: auto;
+  height: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#__next {
+  background-color: #c0c0c0;
+  height: 100%;
+}
+
+.card {
+  border: none;
+  height: auto;
+}
+.text {
+  text-align: right;
+  padding: 5px 0px 15px 0px;
+  font-size: 14px;
+  color: rgb(32, 127, 216);
+  cursor: pointer;
+}
+.text:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(32, 127, 216);
+}
+.forms-inputs {
+  position: relative;
+}
+.forms-inputs span {
+  position: absolute;
+  top: -18px;
+  left: 10px;
+  background-color: #fff;
+  padding: 5px 10px;
+  font-size: 15px;
+}
+.forms-inputs input {
+  height: 50px;
+  border: 2px solid #eee;
+}
+.forms-inputs input:focus {
+  box-shadow: none;
+  outline: none;
+  border: 2px solid #000;
+}
+.btn {
+  height: 50px;
+}
+.success-data {
+  display: flex;
+  flex-direction: column;
+}
+.bxs-badge-check {
+  font-size: 90px;
+}

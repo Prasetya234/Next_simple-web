@@ -1,0 +1,39 @@
+.content {
+  max-width: 1440px;
+  margin: auto;
+  overflow: hidden;
+}
+.card {
+  max-width: 500px;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.body {
+  margin-top: 15%;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: none;
+}
+.first {
+  text-align: center;
+  font-size: 100px;
+  line-height: 100px;
+  font-weight: bold;
+  color: rgba(52, 39, 230, 0.774);
+}
+.second {
+  line-height: 30px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: gray;
+}
+.third {
+  text-align: center;
+  font-size: 20px;
+  color: blue;
+}
