@@ -26,7 +26,6 @@ export default function Home({ dataOrder }: HomeProps) {
   const router = useRouter(),
     toast = useToast(),
     [loading, setLoading] = useState(false),
-    [loadingDel, setLoadingDel] = useState(false),
     [barangID, setBarangID] = useState(''),
     [barang, setBarang] = useState(''),
     [harga, setHarga] = useState(''),
@@ -53,9 +52,7 @@ export default function Home({ dataOrder }: HomeProps) {
     onOpen()
   }
   const deleteOrder = async (id: number) => {
-    setLoadingDel(true)
     await DeleteOrder('/order', id)
-    setLoadingDel(false)
   }
   const saveOrder = async () => {
     setLoading(true)
@@ -190,7 +187,6 @@ export default function Home({ dataOrder }: HomeProps) {
                       &nbsp;
                       <Button
                         colorScheme="red"
-                        isLoading={loadingDel}
                         onClick={() => deleteOrder(order.id)}
                       >
                         Delete
