@@ -212,7 +212,7 @@ export default function Home({ dataOrder }: HomeProps) {
 
 export async function getServerSideProps() {
   const dataOrder = await axios
-    .get('https://test-dandan.herokuapp.com/order')
+    .get('https://web-production-7dfb.up.railway.app/order')
     .then((r) => r.data.content)
   return {
     props: {
